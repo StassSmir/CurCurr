@@ -7,6 +7,7 @@ library(httr)
 #' @param curr1 original currency - specify using 3 letters (USD, AUD etc.)
 #' @param curr2 target currency - converts to this currency - specify using 3 letters (USD, AUD etc.)
 #' @return double variable containing exchange rate
+#' @export curcurr
 curcurr <- function(curr1, curr2) {
   rates <- GET(paste("https://api.currencyapi.com/v3/latest?apikey=4KwYOuxjGtUhhjJsSzyubCcz90pUl852nT0zv2Ot&base_currency=",curr1,sep=""))
   curr <- content(rates)
@@ -16,6 +17,7 @@ curcurr <- function(curr1, curr2) {
 
 #' @title example_convert
 #' @description function does a test conversion using curcurr function to converrt from USD to CAD
+#' @export example_convert
 example_convert <- function()
 {
   curcurr("USD", "CAD")
