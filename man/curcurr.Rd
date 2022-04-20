@@ -2,7 +2,7 @@
 % Please edit documentation in R/curcurr.R
 \name{curcurr}
 \alias{curcurr}
-\title{currcurr}
+\title{curcurr}
 \usage{
 curcurr(curr1, curr2)
 }

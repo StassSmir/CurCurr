@@ -15,7 +15,7 @@ curcurr <- function(curr1, curr2) {
 }
 
 #' @title example_convert
-#' @description function does a test conversion using currcurr function to converrt from USD to CAD
+#' @description function does a test conversion using curcurr function to converrt from USD to CAD
 example_convert <- function()
 {
   curcurr("USD", "CAD")
