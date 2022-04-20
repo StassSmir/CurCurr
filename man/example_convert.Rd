@@ -7,5 +7,5 @@
 example_convert()
 }
 \description{
-function does a test conversion using currcurr function to converrt from USD to CAD
+function does a test conversion using curcurr function to converrt from USD to CAD
 }
