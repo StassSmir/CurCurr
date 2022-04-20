@@ -1,6 +1,6 @@
 
 library(httr)
-#' @title currcurr
+#' @title curcurr
 #' @description function provides currency exchange rate based on two parameters
 #' Currency exchange rate
 #' Connects to online API and gets a JSON file containing all the currency exchange rates for a given a currency
