@@ -9,8 +9,8 @@ library(httr)
 #' @return double variable containing exchange rate
 #' @export curcurr
 curcurr <- function(curr1, curr2) {
-  rates <- GET(paste("https://api.currencyapi.com/v3/latest?apikey=4KwYOuxjGtUhhjJsSzyubCcz90pUl852nT0zv2Ot&base_currency=",curr1,sep=""))
-  curr <- content(rates)
+  rates <- httr::GET(paste("https://api.currencyapi.com/v3/latest?apikey=4KwYOuxjGtUhhjJsSzyubCcz90pUl852nT0zv2Ot&base_currency=",curr1,sep=""))
+  curr <- httr::content(rates)
   get(curr2, curr$data)$value
   return (get(curr2, curr$data)$value)
 }
